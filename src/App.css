@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "irsans";
+  src: url("./IRANSansWeb.woff");
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("./materialize_styles/fonts/asdf.woff2") format('woff2');
+  /* url("./fonts/roboto/Roboto-Bold.woff") format('woff'),
+  url("./fonts/roboto/Roboto-Bold.woff2") format('woff2'),
+  url("./fonts/roboto/Roboto-Light.woff") format('woff'),
+  url("./fonts/roboto/Roboto-Light.woff2") format('woff2'),
+  url("./fonts/roboto/Roboto-Medium.woff") format('woff'),
+  url("./fonts/roboto/Roboto-Medium.woff2") format('woff2'),
+  url("./fonts/roboto/Roboto-Regular.woff") format('woff'),
+  url("./fonts/roboto/Roboto-Regular.woff2") format('woff2'),
+  url("./fonts/roboto/Roboto-Thin.woff") format('woff'),
+  url("./fonts/roboto/Roboto-Thin.woff2") format('woff2'); */
+}
+.imageUploading{
+  color: white !important;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+a{
+  color: inherit !important;
+}
+td , th{text-align: right !important;}
+.favoriteButton{
+  padding:10px;
+  min-width:100px;
+  border-radius:2px;
+  background-color:#eee !important;
+  cursor:pointer;
+  margin:10px !important;
+  font-size:12px;
+  display:inline-block;
+  border-bottom: 1px solid #ccc !important;
+}
+.activeFavoriteButton{
+  background-color: rgb(240,20,80) !important ;
+  color: white;
+}
+select{
+  display: block !important;
+  min-width: 120px;}
+.labelClassName{font-size:12px !important;}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+*{outline: none}
+body {
+  font-family: "irsans";
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+label {
+  right: 40px;
+}
+.input-field label:not(.label-icon).active{
+  transform: translateY(-14px) translateX(40px)  !important ;
+
+}
+li {
+    text-align: right !important;
+    padding-left: 0;
+}
+.title {
+  float: right;
+}
+#about {
+  margin-top: 40px;
+  direction: rtl;
+  font-size: 20px;
+}
+main {
+  flex: 1 0 auto;
+}
+#root {
+  — space: 1.5em 0;
+  — space: 2em 0;
+}
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.Site-content {
+  flex: 1 0 auto;
+  padding: var( — space) var( — space) 0;
+  width: 100%;
+}
+
+
+.Site-content:after {
+  content: ‘\00a0’;
+  display: block;
+  margin-top: var( — space);
+  height: 0;
+  visibility: hidden;
+}
+.fixedForms{
+  z-index: 999;
+  position: fixed;
+  right: 50%;
+  top: 50%;
+  margin-top:-150px;
+  margin-right: -255px;
+  /* display: none; */
+}
+.dark{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+#search{
+  border-radius: 50px;
+  width:0px;
+}
+#search:focus{
+  background-color: rgba(255,255,255,0.9);
+  border-bottom: 0px !important;
+  box-shadow:0 0 0 0 #fff !important;
+  width:80%;
+}
+.upload_image_div img{
+  float: left;
+  max-width: 100%;
+  height: 200px;
+}
+
+td, th {
+    border-bottom: 1px solid lightgrey;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    color: darkgrey;
+}
+
+
+
+@media screen and (max-width:1920px){
+    #cardsheight{
+    height:300px;
+  }
+}
